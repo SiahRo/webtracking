@@ -1,20 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!-- saved from url=(0021)https://tnutting.com/ -->
-<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+                <html>
+                <head>
                     <title>Example Code for Informz Tracking</title>
-                    
-<script>
-//-------------------------------------------------------
-var z_account = "26468D59-B04F-427F-9B13-F284E7F79A38";
-var z_collector = "dev2.invention.informz.com";
-var z_cookieDomain = ".amplifyapp.com";
-//-------------------------------------------------------
-(function (e, o, n, r, t, a, s) { e[t] || (e.GlobalSnowplowNamespace = e.GlobalSnowplowNamespace || [], e.GlobalSnowplowNamespace.push(t), e[t] = function () { (e[t].q = e[t].q || []).push(arguments) }, e[t].q = e[t].q || [], a = o.createElement(n), s = o.getElementsByTagName(n)[0], a.async = 1, a.src = r, s.parentNode.insertBefore(a, s)) }(window, document, "script", "https://cdn.informz.net/web_trk/sp.js", "informz_trk")), informz_trk("newTracker", "infz", z_collector + "/web_trk/collector/", { appId: z_account, cookieDomain: z_cookieDomain }), informz_trk("setUserIdFromLocation", "_zs"), informz_trk("enableActivityTracking", 30, 15); informz_trk("trackPageView", null);
-</script>
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                    <script type="text/javascript">
+                        // Initialize tracking and track the pageview
+                        //-------------------------------------------------------
+                        var z_account = "26468D59-B04F-427F-9B13-F284E7F79A38";
+                        var z_collector = "dev2.invention.informz.com";
+                        var z_cookieDomain = ".amplifyapp.com";
+                        //-------------------------------------------------------
+
+                        (function (e, o, n, r, t, a, s) { e[t] || (e.GlobalSnowplowNamespace = e.GlobalSnowplowNamespace || [], e.GlobalSnowplowNamespace.push(t), e[t] = function () { (e[t].q = e[t].q || []).push(arguments) }, e[t].q = e[t].q || [], a = o.createElement(n), s = o.getElementsByTagName(n)[0], a.async = 1, a.src = r, s.parentNode.insertBefore(a, s)) }(window, document, "script", "https:/web_trk/sp.js", "informz_trk")), informz_trk("newTracker", "infz", z_collector + "/web_trk/collector/", { appId: z_account, cookieDomain: z_cookieDomain }), informz_trk("setUserIdFromLocation", "_zs"), informz_trk("enableActivityTracking", 30, 15); informz_trk("trackPageView", null);
+
+                    </script>
                     <!-- Example events -->
                     <script type="text/javascript">
                         function WhitepaperDownloaded() {
-                            alert("A whitepaper is being downloaded.");
+                            openInformzAlertDialog("A whitepaper is being downloaded.");
                             informz_trk('trackStructEvent',
                                 'Download Whitepaper',         // Category (Required)
                                 'Benefits_of_Membership.pdf',  // Item (Required)
@@ -22,14 +25,14 @@ var z_cookieDomain = ".amplifyapp.com";
                             );
                         }
                         function VideoWatched() {
-                            alert("A video is being watched.");
+                            openInformzAlertDialog("A video is being watched.");
                             informz_trk('trackStructEvent',
                                 'Start Video',                 // Category (Required)
                                 'Annual_Meeting_In_Review.avi' // Item (Required)
                             );
                         }
                         function WebsiteSearch() {
-                            alert("A search is made.");
+                            openInformzAlertDialog("A search is made.");
                             informz_trk('trackStructEvent',
                                 'Website',                      // Category (Required)
                                 'Search',                       // Item (Required)
@@ -37,7 +40,7 @@ var z_cookieDomain = ".amplifyapp.com";
                             );
                         }
                         function PurchaseProduct() {
-                            alert("A purchase was made.");
+                            openInformzAlertDialog("A purchase was made.");
                             informz_trk('addItem',
                                 '12345',          // Order ID (Required)
                                 'A01',            // SKU or Code (Required)
@@ -65,13 +68,12 @@ var z_cookieDomain = ".amplifyapp.com";
                     <h2>This shows how to use page tracking, interaction tracking and online purchase tracking.</h2>
                     <p>
                         Press the buttons below to trigger individual interactions:<br>
-                        <button type="button" onclick="WhitepaperDownloaded()">Downloaded Whitepaper</button>&nbsp;&nbsp;
-                        <button type="button" onclick="VideoWatched()">Watch a video</button>&nbsp;&nbsp;
-                        <button type="button" onclick="WebsiteSearch()">Search the website</button>&nbsp;&nbsp;
+                        <button type="button" onclick="WhitepaperDownloaded()">Downloaded Whitepaper</button>  
+                        <button type="button" onclick="VideoWatched()">Watch a video</button>  
+                        <button type="button" onclick="WebsiteSearch()">Search the website</button>  
                         <button type="button" onclick="PurchaseProduct()">Purchase a product</button><br>
                     </p>
-<br>
-                
-            
+                </body>
+            </html>
 
-        </body></html>
+        
