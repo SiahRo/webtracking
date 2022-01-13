@@ -3,16 +3,14 @@
 <html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                     <title>Example Code for Informz Tracking</title>
                     
-                    <script async="" src="./Example Code for Informz Tracking_files/sp.js.download"></script><script type="text/javascript">
-                        // Initialize tracking and track the pageview
-                        //-------------------------------------------------------
-                        var z_account = "6CCF91BE-282D-4C83-B8DD-ED9ABC498835";
-                        var z_collector = "www.informz.net";
-                        var z_cookieDomain = ".tnutting.com";
-                        //-------------------------------------------------------
-
-                        (function (e, o, n, r, t, a, s) { e[t] || (e.GlobalSnowplowNamespace = e.GlobalSnowplowNamespace || [], e.GlobalSnowplowNamespace.push(t), e[t] = function () { (e[t].q = e[t].q || []).push(arguments) }, e[t].q = e[t].q || [], a = o.createElement(n), s = o.getElementsByTagName(n)[0], a.async = 1, a.src = r, s.parentNode.insertBefore(a, s)) }(window, document, "script", "https://cdn.informz.net/web_trk/sp.js", "informz_trk")), informz_trk("newTracker", "infz", z_collector + "/web_trk/collector/", { appId: z_account, cookieDomain: z_cookieDomain }), informz_trk("setUserIdFromLocation", "_zs"), informz_trk("enableActivityTracking", 30, 15); informz_trk("trackPageView", null);
-                    </script>
+<script>
+//-------------------------------------------------------
+var z_account = "26468D59-B04F-427F-9B13-F284E7F79A38";
+var z_collector = "dev2.invention.informz.com";
+var z_cookieDomain = ".amplifyapp.com";
+//-------------------------------------------------------
+(function (e, o, n, r, t, a, s) { e[t] || (e.GlobalSnowplowNamespace = e.GlobalSnowplowNamespace || [], e.GlobalSnowplowNamespace.push(t), e[t] = function () { (e[t].q = e[t].q || []).push(arguments) }, e[t].q = e[t].q || [], a = o.createElement(n), s = o.getElementsByTagName(n)[0], a.async = 1, a.src = r, s.parentNode.insertBefore(a, s)) }(window, document, "script", "https://cdn.informz.net/web_trk/sp.js", "informz_trk")), informz_trk("newTracker", "infz", z_collector + "/web_trk/collector/", { appId: z_account, cookieDomain: z_cookieDomain }), informz_trk("setUserIdFromLocation", "_zs"), informz_trk("enableActivityTracking", 30, 15); informz_trk("trackPageView", null);
+</script>
                     <!-- Example events -->
                     <script type="text/javascript">
                         function WhitepaperDownloaded() {
